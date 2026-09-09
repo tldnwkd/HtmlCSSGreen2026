@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순서 있고,없는 목록만들기</title>
+</head>
+<body>
+
+    <ol type="A" start="3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ul>
+        <li>Java,Python,C+,MySQL</li>
+        <li>코딩은 재미있어!!</li>
+    </ul>
+
+    <ul>
+        <li>메인 리스트1
+            <ul>
+                <li>서브 목록 리스트1</li>
+                <li>서브 목록 리스트2</li>
+            </ul>
+        </li>       
+    </ul>
+    <hr/>
+
+    <ol>
+        <li>채소
+            <ul>
+                <li>친환경</li>
+                <li>고구마/감자/당근</li>
+            </ul>
+        </li>
+        <li>과일/견과/쌀</li>
+        <li>수산/해산/건어물</li>
+        <li>정육/계란</li>
+    </ol>
+    <hr/>
+    <!-- <a href="이동할 주소지정">텍스트</a> -->
+    <!--    => 이동할 주소로 이동하는 가장 기본이 되는 태그 -->
+
+    <!-- <a>태그의 title 속성은 사용자의 접근성을 위해 작성하는 것이 좋다. -->
+    <!-- <img>태그의 src 속성은 반드시 상대경로방식으로 지정한다. -->
+        <ul>
+        <li>
+            <a href="https://www.naver.com" target="_blank" title="네이버 바로가기">
+                <img src="images/i-search.svg" alt="네이버아이콘" width="30px;" height="30px;"/>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.daum.net" target="_self" title="다음 바로가기">
+                <img src="images/bird.svg" alt="다음아이콘" width="30px;" height="30px;"/>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com" target="_top" title="구글 바로가기">
+                <img src="images/i-gnb.svg" alt="구글아이콘" width="30px;" height="30px;"/>
+            </a>
+        </li>
+     </ul>
+
+</body>
+</html>
