@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바베큐장</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: #ea6153;
+            color: #fff;
+            font-size: 15px;
+        }
+        thead th,tbody td,tfoot td{
+            border: 1px solid #ddd;
+            font-size: 12px;
+            text-align: center;
+            padding: 7px;         
+        }
+        tfoot{
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>인실</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성전용</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="3">1팀 30,000원</td>
+            </tr>
+            <tr>
+                <td>동백방</td>
+                <td>남성전용</td>
+            </tr>         
+            <tr>
+                <td>백합방</td>
+                <td>커플전용</td>
+            </tr>
+             <tr>
+                <td>튤립방</td>
+                <td>가족전용</td>
+                <td>4인실</td>
+                <td>100,000원(4인기준 1팀당)</td>
+            </tr>         
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">모든 준비 재료가 포함된 바베큐장을 렌트해드립니다.(가격:<del>150,000</del> &rarr; 100,000원/4인기준)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
