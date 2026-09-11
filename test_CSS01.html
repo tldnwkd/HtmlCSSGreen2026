@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 설명</title>
+    <style>
+        p{
+            color: red;
+        }
+        /* p라는 태그의 class이름이 center인 경우만 CSS적용 */
+        p.center{
+            color: blue;
+        }
+        /* p라는 태그의 자식,자손 태그의
+        class이름이 center인 경우에 CSS적용 */
+        p .center{
+            color: rgb(4, 245, 56);
+        }
+        div > span{
+            background-color: aqua;
+        }
+        div > span{
+            color: rgb(221, 11, 169);
+        }
+    </style>
+</head>
+<body>
+    <p class="center">이건 파란색!</p>  
+    <div class="center">이건 선택 안 됨</div>
+    <div><span>이건 선택 안 됨</span></div>
+    <div><em><span>이건 선택 안 됨</span></em></div>
+    <p><span class="center">이건 선택 안 됨</span></p>
+    <p><span> <em class="center">class="center">이건 선택 안 됨</em></span></p>
+    <hr/>
+</body>
+</html>

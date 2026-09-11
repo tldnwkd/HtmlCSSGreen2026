@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-size: 13px;
+    }
+    h1,p{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    form{
+        background-color: #f2f2f2;
+        padding: 10px;
+        width: 840px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        margin: 15px 25px;
+    }
+    ::placeholder{
+        font-size: 11px;
+        
+    }
+    label[for='name'],
+    label[for='id'],
+    label[for='pw'],
+    label[for='pw2'],
+    label[for='phone'],
+    label[for='mail'],
+    label[for='checkbox'],
+    label[for='radio'],
+    label[for='path'],
+    label[for='memo']{
+        display: inline-block;
+        width: 130px;
+        font-weight: bold;
+    }
+    label[for='memo']{
+        vertical-align: top;
+    }
+    label[type='title']{
+        font-weight: 500;
+    }
+    input[type='text'],
+    input[type='password'],
+    input[type='tel']{
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px 6px;
+        width: 150px;      
+    }
+
+    input[type='checkbox'],
+    input[type='radio']{
+        margin: 5px;
+        font-weight: bold;
+    }
+    input[type='tel']{
+        width: 60px;
+    }
+    input[type='tel']{
+        width: 45px;
+    }
+    select[name='path']{
+        width: 180px;
+    }
+    select{
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px 8px;
+    }
+    textarea{
+        width: 250px;
+        height: 80px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px;
+    }
+    .btn{
+        text-align: center;
+    }
+    .btn button[type='submit'],
+    .btn button[type='reset']{
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        margin-right: 10px;
+    }
+    .btn button[type='submit']{
+        background-color: #02a802;
+    }
+    .btn button[type='reset']{
+        background-color: #fa4747;
+    }
+    .btn button[type='submit']:hover{
+        background-color: #45ca45;
+    }
+    .btn button[type='reset']:hover{
+        background-color: #ff0000;
+    }
+</style>
+<body>
+    <h1>Sign up</h1>
+    <p>
+        Become a member of Andrew'sCompany,and enjoy variety of benefits.
+    </p>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="이름 입력">
+            </li>
+            <li>
+                <label for="id">ID</label>
+                <input type="text" name="id" id="id" placeholder="ID 입력">
+            </li>
+            <li>
+                <label for="pw">Password</label>
+                <input type="password" name="PW" id="pw" placeholder="PW 입력">
+            </li>
+            <li>
+                <label for="pw2">Confirm Password</label>
+                <input type="password" name="PW2" id="pw2" placeholder="PW 확인">
+            </li>
+            <li>
+                <label for="phone">Mobile</label>
+                <select name="phone">
+                    <option selected>010</option>
+                    <option >011</option>
+                    <option >016</option>
+                <select>
+                <input type="tel" name="phone" id="phone" placeholder="4자리만">&nbsp;-
+                <input type="tel" name="phone" id="phone" placeholder="4자리만">
+            </li>
+            <li>
+                <label for="mail">E-mail</label>
+                <input type="text" name="mail" id="mail" placeholder="emil 아이디 입력">@
+                <input type="text" name="mail" id="mail" placeholder="직접 메일 이름 입력">
+                <select name="mail">
+                    <option selected disabled>Direct input</option>
+                    <option value="1">naver.com</option>
+                    <option value="2">daum.net</option>
+                    <option value="3">gmail.com</option>
+                <select>
+            </li>
+            <li>
+                <label for="checkbox">Whether to receive email</label>
+                <label type="title"><input type="checkbox"/>Acceptance</label>
+            </li>
+            <li>
+                <label for="checkbox">Interest</label>
+                <label type="title"><input type="checkbox"/>Movie</label>
+                <label type="title"><input type="checkbox"/>Theater</label>
+                <label type="title"><input type="checkbox"/>Travel</label>
+                <label type="title"><input type="checkbox"/>Mountain climbing</label>
+                <label type="title"><input type="checkbox"/>Visiting a restaurant</label>
+                <label type="title"><input type="checkbox"/>Volunteer</label>
+                <label type="title"><input type="checkbox"/>Etc</label>
+            </li>
+            <li>
+                <label for="radio">Gender</label>
+                <label type="title"><input type="radio" name="gender" checked/>Male</label>
+                <label type="title"><input type="radio" name="gender"/>Female</label>
+            </li>
+            <li>
+                <label for="path">Path learned</label>
+                <select name="path">
+                    <option selected disabled>Choose</option>
+                    <option value="1">Internet</option>
+                    <option value="2">Acquaintance introduction</option>
+                    <option value="3">Etc</option>
+                </select>
+            </li>
+            <li>
+                <label for="memo">Memo</label>
+                <textarea id="memo" name="memo" placeholder="메모 입력"></textarea>
+            </li>
+        </ul>
+        <div class="btn">
+            <button type="submit">Sign up</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>

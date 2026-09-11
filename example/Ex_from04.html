@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 연습문제</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h4>예약 날짜/시간 입력</h4>
+
+        <ul>
+            <li>
+                <label for="month-input">month :</label>
+                <input type="month" id="month-input" name="reservation_month" value="2026-09">
+            </li>
+            <li>
+                <label for="week-input">month :</label>
+                <input type="week" id="week-input" name="reservation_week" value="2026-w37">
+            </li>
+            <li>
+                <label for="date-input">month :</label>
+                <input type="date" id="date-input" name="reservation_date" value="2026-09-11">
+            </li>
+            <li>
+                <label for="time-input">month :</label>
+                <input type="time" id="time-input" name="reservation_time" value="14:51:11">
+            </li>
+            <li>
+                <label for="local-input">month :</label>
+                <input type="datetime-local" id="local-input" name="reservation_local" value="2026-09-11 14:51:11">
+                
+            </li>
+        </ul>
+         <h4>인원 수 입력</h4>
+            <ul>
+                <li>
+                    <label for="number" id="peopleCount">예약인원 :</label>
+                    <input type="number" id="peopleCount" name="peopleCount" min="5" max="10" value="5">
+
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="status">만족도</label>
+                    <input type="range" id="status" name="status" min="0" max="10" list="tem"/>
+                    <datalist id="tem">
+                        <option value="1" label="low"></option>
+                        <option value="5" label="medium"></option>
+                        <option value="10" label="high"></option>
+                    </datalist>
+                </li>
+            </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 회원가입</title>
+</head>
+<body>
+    <h4>회원가입</h4>
+    <div><span>*</span>필수입력사항</div>
+    <hr/>
+    <form action="#" method="get">
+        <ul>
+            <li>
+                <label for="id">아이디<span>*</span>
+                    <input type="text" id="id" placeholder="아이디를 입력해주세요"/>
+                </label>
+            </li>
+            <li>
+                <label for="pw">비밀번호<span>*</span>
+                    <input type="password" id="pw" placeholder="비밀번호를 입력해주세요"/>
+                </label>
+            </li>
+            <li>
+                <label for="pw2">비밀번호확인<span>*</span>
+                    <input type="password" id="pw2" placeholder="비밀번호를 한번 더 입력해주세요"/>
+                </label>
+            </li>
+            <li>
+                <label for="name">이름<span>*</span>
+                    <input type="text" id="name" placeholder="이름을 입력해주세요"/>
+                </label>
+            </li>
+            <li><label for="mail">이메일<span>*</span>
+                    <input type="text" id="mail" placeholder="예: marketkurly"/>@
+                    <select>
+                        <option value="1" selected >직접 입력</option>
+                        <option value="2">naver.com</option>
+                        <option value="3">gmail.com</option>
+                        <option value="4">hanmail.net</option>
+                        <option value="5">kakao.com</option>
+                        <option value="6">daum.net</option>
+                        <option value="7">hotmail.com</option>
+                        <option value="8">yahoo.co.kr</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <label for="phone">휴대폰<span>*</span>
+                    <input type="tel" id="phone" placeholder="숫자만 입력해주세요."/>
+                </label>
+                <button type="button" disabled class="phone_button">
+                    인증번호 받기
+                </button>
+            </li>
+            <li>
+                <label for="address">주소<span>*</span>
+                    <button type="button" id="address" class="address_button">
+                        <img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg" alt="주소검색">주소 검색
+                    </button><br>
+                    <span class="info">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                </label>
+            </li>
+            <li>
+                <label for="gender">성별
+                    <input type="radio" value="0"/>남자
+                    <input type="radio" value="1"/>여자
+                    <input type="radio" value="-1"/>선택안함
+                </label>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </form>
+</body>
+</html>
