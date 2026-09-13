@@ -1,0 +1,241 @@
+@charset 'utf-8';
+
+/* 기본 스타일 리셋 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+}
+
+body {
+  width: 640px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* 제목 영역 */
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body > div:nth-of-type(1) {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+body > div span,
+li label span {
+  color: #ee6a7b; /* 필수 입력 표시 별표 색상 */
+  margin-left: 2px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+/* 리스트 구조 정리 */
+ul {
+  list-style: none;
+}
+
+form > ul > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: 44px;
+}
+
+/* 왼쪽 라벨 타이틀 기본 너비 고정 */
+form > ul > li > label:first-child,
+form > ul > li > span:first-child {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* 입력창 (input, select) 공통 스타일 */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+  height: 44px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 포커스되었을 때 마켓컬리 보라색 테두리 */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #5f0080;
+}
+
+/* 아이디, 비밀번호, 이름 등 단일 입력창 너비 */
+#id, #pw, #pw2, #name {
+  width: 330px;
+}
+
+/* 이메일 입력 영역 */
+#mail {
+  width: 160px;
+}
+
+select {
+  width: 150px;
+  margin-left: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* 휴대폰 & 버튼 영역 */
+#phone {
+  width: 200px;
+}
+
+.phone_button {
+  width: 120px;
+  height: 44px;
+  margin-left: 10px;
+  border: 1px solid #5f0080;
+  background-color: #fff;
+  color: #5f0080;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.phone_button:disabled {
+  border-color: #ddd;
+  color: #ddd;
+  cursor: default;
+}
+
+/* 주소 검색 버튼 */
+.address_button {
+  width: 330px;
+  height: 44px;
+  border: 1px solid #5f0080;
+  background-color: #fff;
+  color: #5f0080;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.info {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* 라디오 & 체크박스 요소 정리 */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #5f0080; /* 체크/선택 시 마켓컬리 보라색 */
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* 성별 & 추가입력 라디오 간격 */
+form > ul > li label input[type="radio"] {
+  margin-left: 15px;
+}
+
+/* 생년월일 (YYYY / MM / DD) */
+#yeal, #month, #day {
+  width: 90px;
+  text-align: center;
+}
+
+/* 이용약관 동의 영역 (수정완료) */
+form > div:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+.agree-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  min-height: auto;
+}
+
+/* 약관 목록 라벨 너비 고정 해제 (행 어긋남 방지) */
+.agree-list li > label:first-child {
+  width: auto;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 전체동의 라벨 강조 */
+.agree-list li:first-child label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.agree-info {
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  display: block;
+  padding-left: 24px;
+  margin-top: 4px;
+}
+
+.agree {
+  font-size: 12px;
+  color: #999;
+  margin-left: 6px;
+}
+
+/* 가입하기 제출 버튼 */
+.submit-btn-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  width: 240px;
+  height: 56px;
+  background-color: #5f0080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 30px auto 0;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #4c0066;
+}
