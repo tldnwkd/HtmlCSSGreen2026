@@ -1,0 +1,211 @@
+@charset 'utf-8';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR";
+  color: #333;
+}
+
+body {
+  width: 640px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body > div {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+body > div span,
+li label span {
+  color: #ee6a7b; 
+  margin-left: 2px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+form > ul > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: 44px;
+}
+
+
+label.margin,
+form > ul > li > span {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+  height: 44px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #5f0080;
+}
+
+
+#id, #pw, #pw2, #name {
+  width: 330px;
+}
+
+
+#mail {
+  width: 160px;
+}
+
+select {
+  width: 150px;
+  margin-left: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+#phone {
+  width: 200px;
+}
+
+.phone_button {
+  width: 120px;
+  height: 44px;
+  margin-left: 10px;
+  border: 1px solid #5f0080;
+  background-color: #fff;
+  color: #5f0080;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.address_button {
+  width: 330px;
+  height: 44px;
+  border: 1px solid #5f0080;
+  background-color: #fff;
+  color: #5f0080;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+
+form > ul > li label input[type="radio"] {
+  margin-left: 15px;
+}
+
+
+#yeal, #month, #day {
+  width: 90px;
+  text-align: center;
+}
+
+
+.agree-list li{
+  width: auto;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+.agree-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+
+.agree {
+  font-size: 12px;
+  color: #999;
+  margin-left: 6px;
+}
+
+
+form .submit-btn{
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+button[type="submit"] {
+  width: 240px;
+  height: 56px;
+  background-color: #5f0080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4c0066;
+}
+
+div.last{
+  font-size: 12px;
+  margin-left: 23px;
+  color: #999;
+}

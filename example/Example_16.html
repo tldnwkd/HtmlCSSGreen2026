@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요금제</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: rgb(238, 238, 238);
+        }
+        body div{
+            display: inline-block;
+        }
+        .rec_plan{
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
+            width: 280px;
+            background-color: rgb(0, 42, 74);
+            color: aliceblue;
+            text-align: center;
+        }
+        .plan{
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+            width: 250px;
+            margin: 25px;
+            background-color: white;
+            text-align: center;
+        }
+        ul li{
+            text-align: left;
+            margin: 20px;
+        }
+        .button{
+            border-radius: 20px;
+            width: 150px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid rgb(0, 42, 74);
+        }
+        .rec_plan .button{
+            border: 1px solid rgb(0, 42, 74);
+            background-color: white;
+            color: rgb(0, 42, 74);
+        }
+        p{
+            border-bottom: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="price"><span>$9</span>/month</p>
+            <ul>
+                <li>5 Projects</li>
+                <li>1GB Storage</li>
+                <li>Email Support</li>
+                <li class="button">Choose Plan</li>
+            </ul>
+        </div>
+        <div class="rec_plan">
+            <h2>Standard</h2>
+            <p class="price"><span>$19</span>/month</p>
+            <ul>
+                <li>20 Projects</li>
+                <li>10GB Storage</li>
+                <li>Priority Support</li>
+                <li class="button">Choose Plan</li>
+            </ul>
+        </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="price"><span>$39</span>/month</p>
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>100GB Storage</li>
+                <li>24/7 Phone Support</li>
+                <li class="button">Choose Plan</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
