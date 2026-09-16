@@ -1,0 +1,75 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.login-wrap{
+    width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.ip-wrap{
+    overflow: hidden;
+}
+h1{
+    color: #03c75a;
+    font-weight:900;
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+.login-box{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px rgba(165, 165, 165, 0.5);
+    padding: 30px;
+    padding-top: 50px;
+}
+input::placeholder{
+    font-size: 16px;   
+}
+input[type="text"],
+input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: 0 auto;
+    display: block;
+    width: 450px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+.ip{
+    float: right;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 2px 2px rgba(248, 247, 247, 0.5);
+    padding: 15px 0;
+    font-size: 15px;
+}
+.pass-login{   
+    width: 210px;
+    display: inline-block;
+    margin-right: 10px;
+    margin: 20px 0;
+}
+div .login{
+    background-color: #03c75a;
+    color: white;
+    width: 210px;
+    display: inline-block;
+}
+.QR{
+    text-align: center;
+}
+a{  
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
