@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품</title>
+    <style>
+        .parent{
+            width: 700px;
+            height: 700px;
+            /* border: 1px solid red; */
+        }
+        .first{
+           width: 600px;
+           height: 185px;
+           /* border: 1px solid red; */
+           box-sizing: border-box;
+           position: relative;
+        }
+        .second-child1{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            position: relative;
+        }
+        .second-child2{
+            width: 350px;
+            height: 150px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 10%;
+            left: 30%;  
+                    
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .third-child2{
+            font-size: 21px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        .price{
+            opacity: 0.4;
+            text-decoration: line-through;
+            margin-right: 8px;
+            color: gray;
+        }
+        .sale{
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 8px ;
+        }
+        .sale-price{
+            font-weight: bold;
+            font-size: 23px;
+            margin-left: 8px ;
+        }
+        .third-child4{
+            opacity: 0.4;
+        }
+        .third-child3{
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        .time-sale{
+            border: 1px solid red;
+            border-radius: 15px 0 15px 0;
+            width: 125px;
+            font-size: 14px;
+            color: white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 5px;
+            padding-top: 2px;
+        }
+        .membership{
+            border: 1px solid rgb(70, 30, 218);
+            border-radius: 15px 0 15px 0;
+            width: 105px;
+            font-size: 16px;
+            color: white;
+            background-color: rgb(90, 30, 255);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 3px;
+            padding-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="first child1">
+            <div class="second-child1">
+                <div class="third-child1">
+                    <img src="https://fastly.picsum.photos/id/292/200/200.jpg?hmac=7YkXzLMIowMqCykbUZqHMzYPmE9cwTxSKh6VvvQYUjI" alt="짜장면">
+                    <div class="time-sale">06:53:30 남음</div>
+                </div>
+            </div>
+            <div class="second-child2">
+                <div class="third-child2">한입 그릴감이 좋다 바르닭 한입 닭가슴살</div>
+                <div class="third-child3"><span class="price">4,400원</span> <span class="sale">56%</span><span class="sale-price">1,900원</span></div>
+                <div class="third-child4">★4.82 · 리뷰 117</div>
+            </div>
+        </div>
+        <div class="first child2">
+            <div class="second-child1">
+                <div class="third-child1">
+                    <img src="https://fastly.picsum.photos/id/431/200/200.jpg?hmac=htJbypAbF5_h67SAU-qYOJLyDwNNHcHSfL67TITi2hc" alt="닭가슴살">
+                    <div class="membership">멤버십 전용</div>
+                </div>
+            </div>
+            <div class="second-child2">
+                <div class="third-child2">[이연복의 목란] 신상 짜장면 2종</div>
+                <div class="third-child3"><span class="price">11,900원</span> <span class="sale">16%</span><span class="sale-price">9,980원~</span></div>
+                <div class="third-child4">★5.0 · 리뷰 1</div>
+            </div>
+        </div>
+        <div class="first child3">
+            <div class="second-child1">
+                <div class="third-child1">
+                    <img src="https://fastly.picsum.photos/id/1080/200/200.jpg?hmac=0okKAdyiW9oTgR5PNZQrDYFtWu7HAt93nI93ZpfelUw" alt="딸기">
+                    <div class="membership">멤버십 전용</div>
+                </div>
+            </div>
+            <div class="second-child2">
+                <div class="third-child2">[오설록] 그린티 랑드샤(10g X 10개)</div>
+                <div class="third-child3"><span class="price">14,000원</span> <span class="sale">25%</span><span class="sale-price">10,500</span></div>
+                <div class="third-child4">★4.85 · 리뷰 447</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보이고 감추기</title>
+    <style>
+        .parent div{
+            width: 200px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+        }
+        .child1{
+            background-color: dodgerblue;
+            /* display: none; */
+        }
+        .child2{
+            background-color: gold;
+            /* visibility: hidden; */
+        }
+        .child3{
+            background-color: lightgray;
+            opacity: 0.1;
+        }
+        .parent02{
+            position: relative;
+            margin: 400px auto;
+        }
+        .parent02 div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .child4{
+            background-color: skyblue;
+            margin: 10px;
+            
+        }
+        .child5{
+            background-color: blueviolet;
+            margin: 20px;
+           
+        }
+        .child6{
+            background-color: brown;
+            margin: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 엘리먼트 보이고 / 감추는 속성
+         1. display: none => 공간,크기 x,화면에 안보임, 실제 x.
+         2. opacity: 0 => 공간,크기 o 화면에 안보임,실제o 
+         3. visibility: hidden => 공간,크기 o 화면에 안보임,실제x  -->
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>    
+        <!-- Z-index : 반드시 position과 함께 사용해야함
+                       같은 모양의 div가 겹쳐 있을 경우
+                       맨 앞, 그 다음, 그 다음 위치를 설정하는 속성
+                       숫자가 높을 수록 위로 올라옴
+                       단, Z-index에 숫자를 1,2,3 식으로 주지않아도됨
+                       ex) Z-index: 1000,90,500 등 
+        -->
+    <hr/>
+    <div class="parent02">
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+    </div>
+    
+</body>
+</html>

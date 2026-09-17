@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>런닝화</title>
+    <style>
+        .parent{
+            width: 700px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;  
+        }
+        .first{
+            width: 150px;
+            height: 150px;
+            /* border: 1px solid red;   */
+            display: inline-block;
+            margin: 8px;
+            border-radius: 20px;
+            position: relative;       
+        }
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        div{
+            text-align: center;
+            color: gray;
+            font-size: 14px;
+        }
+        .sold-out{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            width: 150px;
+        }
+        
+        .opacity{
+            background-color: black;
+            border-radius: 20px;
+            width: 100%;
+            opacity: 0.8;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="first child1">
+            <div class="second-child1">
+               <img src="https://fastly.picsum.photos/id/103/200/200.jpg?hmac=iAYeZbg7h6KXJzEJuemMnhxfHUPDu6OkgQ_TfAMWlRM" alt="런닝화 A">
+               <div>런닝화 A</div> 
+            </div>
+        </div>
+        <div class="first child2">
+            <div class="second-child2">
+               <img src="https://fastly.picsum.photos/id/21/200/200.jpg?hmac=a2iQ6UhOjpU6jn7QSsCpk1CiiKTxmW1R4UivDsv-n8o" alt="런닝화B">
+            </div>
+            <div>런닝화 B</div>
+            <div class="opacity"> 
+                 <div class="sold-out">SOLD OUT</div>
+            </div>
+        </div>
+        <div class="first child3">
+            <div class="second-child3">
+                <img src="https://fastly.picsum.photos/id/26/200/200.jpg?hmac=A1fbIskzMWVQs1JuyIsJXYGuCgqVwevLXT4YaIJM3Rk" alt="런닝화B">
+            </div>
+            <div>런닝화 C</div> 
+        </div>
+        <div class="first child4">
+            <div class="second-child4">
+                <img src="https://fastly.picsum.photos/id/1/200/200.jpg?hmac=jZB9EZ0Vtzq-BZSmo7JKBBKJLW46nntxq79VMkCiBG8" alt="런닝화B">
+            </div>
+            <div>런닝화 D</div>
+            <div class="opacity"> 
+                 <div class="sold-out">SOLD OUT</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
