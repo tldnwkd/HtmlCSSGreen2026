@@ -1,156 +1,185 @@
 @charset 'utf-8';
 
-.second-child1,.second-child2,.second-child3{
-    width: 850px;
-    /* border: 1px solid rgb(25, 253, 4); */
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /* text-align: center; */
-    margin-top: 8px;
 }
-div .third{
-    width: 250px;
-    height: 300px;
-    display: inline-block;
-    /* border: 1px solid rgb(255, 251, 0); */
-    box-sizing: border-box;
-    margin: 5px 5px;
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
 }
-img{
-    width: 100%;
-    height: 300px;   
-}
-img:hover{
-    cursor: pointer;
-}
-button[type="button"]{
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #cecece;
-    padding: 8px 0;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover{
-    background-color: rgb(238, 236, 236);
-}
-.parent{
+
+/* 전체 컨테이너 정렬 */
+.parent {
     width: 1000px;
-    height: 1000px;
-    /* border: 1px solid red; */
-    box-sizing: border-box;
+    margin: 0 auto;
 }
-.first{
+
+.first {
     width: 800px;
-    /* border: 1px solid rgb(47, 2, 248); */
-    box-sizing: border-box;
-    margin: 19px;
+    margin: 20px auto;
 }
-.menu{
+
+/* --- 상단 메뉴 영역 --- */
+.menu {
     position: relative;
+    height: 30px;
+    margin-bottom: 15px;
 }
-.category{
-    margin: right;
-    display: inline-block;
-    /* border: 1px solid red; */
-    position: absolute;
-    right: 0;
-    color: rgb(0, 0, 0);
-}
-.cate-info:hover{
-    cursor: pointer;
-    color: rgb(22, 22, 22);
-    font-weight: bold;
-}
-.count{
+
+.count {
     display: inline-block;
     font-size: 14px;
+    line-height: 30px;
 }
-.help{
+
+.category {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.help {
     border: 1px solid rgb(83, 83, 83);
     border-radius: 50%;
     font-size: 9px;
-    margin: 3px;
+    margin: 0 3px;
     opacity: 0.6;
-    padding: 0 2px;
+    padding: 0 3px;
     display: inline-block;
 }
-.help:hover{
+
+.help:hover {
     font-weight: bold;
     cursor: pointer;
     color: #131212;
 }
-.category{
+
+.cate-info {
+    opacity: 0.6; 
+    color: black;
+    text-decoration: none;
     font-size: 12px;
-    margin-right: 13px;
 }
-.cate-info{
-   opacity: 0.6; 
-   color: black;
-   text-decoration: none;
-   font-size: 12px;
+
+.cate-info:hover {
+    cursor: pointer;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
 }
-.info-child1,
-.info-child2,
-.info-child3{
-    /* width: 250px; */
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    margin: 5px 5px;
+
+/* --- 상품 목록 (flex 없이 inline-block으로 구현) --- */
+.second-child1 {
+    width: 800px;
+    font-size: 0; /* inline-block 요소 사이의 기본 줄바꿈 여백 제거 */
+}
+
+/* 개별 카드 */
+.third {
+    width: 250px; /* 250px * 3개 = 750px */
+    display: inline-block;
+    vertical-align: top; /* 상단 기준선 정렬 */
+    margin-right: 25px; /* 카드 간격 (25px * 2개 = 50px) -> 총 800px */
+    font-size: 14px; /* 부모 font-size: 0으로 지워진 폰트 크기 재설정 */
+}
+
+/* 마지막 3번째 카드는 우측 여백을 지워 800px에 딱 맞춤 */
+.third.child3 {
+    margin-right: 0;
+}
+
+/* 이미지 스타일링 */
+img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+img:hover {
     cursor: pointer;
 }
-.info-child1{
-    margin-top: 12px;
+
+/* 장바구니 담기 버튼 */
+button[type="button"] {
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #cecece;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 6px;
 }
-.info1{
-    opacity: 0.3;
+
+button:hover {
+    background-color: rgb(238, 236, 236);
 }
-.info2{
-    font-size: 16px;
-}.info3{
-    opacity: 0.3;
+
+/* 상품 상세 정보 영역 */
+.common {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.info1 {
+    opacity: 0.4;
     font-size: 12px;
-}.info4{
+}
+
+.info2 {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.info3 {
+    opacity: 0.4;
+    font-size: 12px;
+}
+
+.info4 {
     font-size: 12px;
     color: rgb(212, 28, 28);
     font-weight: 600;
-}.info5{
+}
+
+.info5 {
     opacity: 0.3;
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: line-through;  
-}.info7{
-    opacity: 0.3;
+}
+
+.info7 {
+    opacity: 0.4;
     font-size: 12px;
-}.info8{
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 40px;
-    background-color: rgba(197, 197, 202, 0.568);
+}
+
+.info8 {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: rgba(197, 197, 202, 0.3);
     color: rgb(138, 2, 138);
     font-size: 11px;
-    padding: 4px 10px;
-    cursor: pointer;
+    padding: 3px 6px;
+    margin-top: 4px;
 }
-.info8:hover{
-    background-color: rgba(174, 174, 179, 0.568);
+
+.info8:hover {
+    background-color: rgba(174, 174, 179, 0.5);
 }
-.red{
+
+.red {
     color: rgb(255, 60, 0);
+    font-weight: bold;
+    margin-right: 4px;
 }
-.black{
+
+.black {
     color: black;
     font-weight: bold;
-    font-size: 17px;
-}
-.product-info1{
-    /* height: 210px; */
-    width: 800px;
-    border:1px solid blue;
-    margin: 10px 0;
-}
- .product-info1 .common{
-    display: inline-block;
-    width: 250px;
-    height: 210px;
-    border: 1px solid red;
+    font-size: 16px;
 }

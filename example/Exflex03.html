@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+        }
+        .login-box{
+            width: 400px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            margin: 20px auto;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        input{
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+        button{
+            border: 1px solid rgb(255, 255, 254);
+            width: 100%;
+            background-color: orangered;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" placeholder="아이디 입력" />
+        <input type="password" placeholder="비밀번호 입력" />
+        <button>로그인</button>
+    </div>
+</body>
+</html>

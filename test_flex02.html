@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            width: 400px;
+            border: 2px solid green;
+            margin: 0 auto;
+            /* align-iems은 세로 위치 정렬
+               start =top랑 같은의미
+               end  =botton 이랑 같은의미
+               center = 중간에 위치
+            */
+            /* align-items:flex-start; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: red;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+    <!-- display:flex는 반드시 부모 flex 속성을 지정해야한다 -->
+    <div class="container">
+        <div class="box">div1</div>
+        <div class="box">div2</div>
+        <div class="box">div3</div>
+        <div class="box">div4</div>
+        <div class="box">div5</div>
+        <div class="box">div6</div>
+        <div class="box">div7</div>
+        <div class="box">div8</div>
+        <div class="box">div9</div>
+      
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        
+        form ul li{
+           width: 400px;
+           display: flex;
+           justify-content: center;
+           margin-bottom: 10px;
+           /* flex-direction: column; */
+           margin: 0 auto;
+           justify-content: space-between;
+           margin-bottom: 10px;
+        }
+        ul li label{
+            width: 100px;
+            /* display: flex; */
+        }
+        input{
+            width: 250px;
+        }
+        button{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <ul class="form-child1">
+                <li class="ul-child1">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" placeholder="홍길동">
+                </li>
+                <li class="ul-child2">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </li>
+                <li class="ul-child3">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password">
+                </li>
+                <li class="ul-child4">
+                    <label for="password2">비밀번호 확인</label>
+                    <input type="password" id="password2" name="password2">
+                </li>
+                <li>
+                    <button type="submit" id="submit">회원가입</button>            
+                </li>
+            </ul>
+            
+        </form>
+    </div>
+</body>
+</html>

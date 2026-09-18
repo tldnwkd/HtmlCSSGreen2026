@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #eee;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .item{
+            background-color: rgb(15, 107, 15);
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        .grow-box .item{
+            flex-grow: 1;
+        }
+        .flex-box .item{
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <h3>1.flex-grow : 1 (문자 길이가 다르면 박스 크기도 달라짐)</h3>
+    <div class="container grow-box">
+        <div class="item">짧음</div>
+        <div class="item">중간길이 텍스트</div>
+        <div class="item">엄청나게 긴 문자열 길이</div>
+    </div>
+    <h3>2.flex : 1 (문자의 길이와 상관없이 무조건 1:1:1 똑같이 분할)</h3>
+    <div class="container flex-box">
+        <div class="item">짧음</div>
+        <div class="item">중간길이 텍스트</div>
+        <div class="item">엄청나게 긴 문자열 길이</div>
+    </div>
+</body>
+</html>

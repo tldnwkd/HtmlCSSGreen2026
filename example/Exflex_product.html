@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            background-color: #f2f3f2;;
+        }
+        .container{
+            display: flex;
+            width: 1050px;
+            justify-content: space-evenly;
+            margin: 20px auto;
+        }
+        .product{
+            width: 23%;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 0.2px 0.2px rgba(252, 252, 252, 0.5);
+        }
+        .name{
+            font-size: 13.5px;
+            font-weight: 500;
+        }
+        .price{
+            text-decoration: line-through;
+            opacity: 0.5;
+            font-size: 15px;
+        }
+        .sale-price{
+            font-weight: bold;
+        }
+        .sale{
+            color: red;
+        }
+        .love-container{
+            position: relative;
+        }
+        .love{
+            position: absolute;
+            right: 5px;
+            bottom: 12px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            padding: 0 3px;
+            background-color: rgb(7, 7, 7);
+            color: rgb(212, 211, 211);
+            opacity: 0.4;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="love-container">
+                <img src="/images/sale01.jpg" alt="소고기 한우">
+                <div class="love">♥</div>
+            </div>
+            <div class="info">
+                <span class="name">
+                    ++1등급 마장동 명품 투뿔 한우 선물 세트 소고기 구이용 설 명절
+                </span><br>
+                <span class="price">54,500원</span>
+                <div class="sale-price">
+                    <span class="sale">18%</span>
+                    <span>44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="love-container">
+                <img src="/images/sale02.jpg" alt="소고기 한우">
+                <div class="love">♥</div>
+            </div>
+            <div class="info">
+                <span class="name">
+                    ++1등급 마장동 명품 투뿔 한우 선물 세트소고기 구이용 설 명절
+                </span><br>
+                <span class="price">54,500원</span>
+                <div class="sale-price">
+                    <span class="sale">18%</span>
+                    <span>44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="love-container">
+                <img src="/images/sale03.jpg" alt="소고기 한우">
+                <div class="love">♥</div>
+            </div>
+            <div class="info">
+                <span class="name">
+                    ++1등급 마장동 명품 투뿔 한우 선물 세트소고기 구이용 설 명절
+                </span><br>
+                <span class="price"></span>
+                <span class="price">54,500원</span>
+                <div class="sale-price">
+                    <span class="sale">18%</span>
+                    <span>44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="love-container">
+                <img src="/images/sale04.jpg" alt="소고기 한우">
+                <div class="love">♥</div>
+            </div>
+            <div class="info">
+                <span class="name">
+                    ++1등급 마장동 명품 투뿔 한우 선물 세트소고기 구이용 설 명절
+                </span><br>
+                <span class="price">54,500원</span>
+                <div class="sale-price">
+                    <span class="sale">18%</span>
+                    <span>44,300원</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
