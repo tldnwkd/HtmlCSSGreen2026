@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="stylesheet" href="/OOZY/member.css">
+</head>
+<body>
+    <section class="container">
+        <h1>OOZY COFFEE</h1>
+        <h3>회원가입</h6>
+        <p class="coupon">가입하면 <span class="coupon">10만원 쿠폰팩</span>을 바로 드려요!</p>
+        <form action="" >
+            <ul class="member-container">
+                <!-- 이메일 -->
+                <li class="check">
+                    <label for="mail">이메일<span class="red">*</span></label>
+                    <input type="text" id="mail" placeholder="이메일을 입력해 주세요.">
+                    <button type="button" class="dup-check">중복확인</button>
+                </li>
+                <!-- 비밀번호 -->
+                <li>
+                    <label for="pw">비밀번호<span class="red">*</span></label>
+                    <input type="password" id="pw" name="password" placeholder="비밀번호를 입력해 주세요.">
+                    <div class="pw-info">8~20자,영문,숫자,특수문자 중 2가지 이상 조합</div>
+                </li>
+                <!-- 비밀번호 확인 -->
+                <li>
+                    <label for="pw-check">비밀번호 확인<span class="red">*</span></label>
+                    <input type="password" id="pw-check" name="password" placeholder="비밀번호를 한번 더 입력해 주세요.">
+                </li>
+                <!-- 이름 -->
+                <li>
+                    <label for="name">이름<span class="red">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요.">
+                </li>
+                <!-- 휴대폰번호 -->
+                <li class="auth">
+                    <label for="phone">휴대폰번호<span class="red">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
+                    <button type="button" class="auth-num">인증번호 받기</button>
+                </li>
+                <!-- 생년월일 -->
+                <li>
+                    <label for="birth" >생년월일(선택)</label>
+                    <input type="date" placeholder="연도·월·일" id="birth" name="birth">
+                </li>
+                <!-- 성별 -->
+                <li>
+                <li class="gender">
+                    <label for="gender">성별(선택)</label>
+                    <div class="gender-choice">
+                        <label for="woman"><input type="radio" name="gender" id="woman">여성</label>
+                        <label for="man"><input type="radio" name="gender" id="man">남성</label>
+                        <label for="no"><input type="radio" name="gender" id="no">선택안함</label>
+                    </div>
+                </li>
+            </ul>
+            <ul class="use">
+                <li><h5>약관동의</h5></li>
+                <li class="all-check">
+                    <label for="checkbox">
+                        <input type="checkbox" id="checkbox">&nbsp;&nbsp;전체 동의하기
+                    </label>
+                </li>
+                <li class="required-container">
+                    <label for="checkbox2"><input type="checkbox" id="checkbox2">
+                    <span class="required"> [필수]</span>이용약관 동의</label>
+                    <a href="#">보기</a>
+                </li>
+                <li class="required-container">
+                    <label for="checkbox3"><input type="checkbox" id="checkbox3">
+                    <span class="required"> [필수]</span>개인정보 수집 및 이용 동의</label>
+                    <a href="#">보기</a>
+                </li>
+                <li>
+                    <label for="checkbox4"><input type="checkbox" id="checkbox4">
+                    <span class="required"> [필수]</span>만 14세 이상입니다.</label>
+                </li>
+                <li class="required-container">
+                    <label for="checkbox5"><input type="checkbox" id="checkbox5">
+                    <span class="choice"> [선택]</span>이벤트·혜택 정보 수신동의</label>
+                    <a href="#">보기</a>
+                </li>
+            </ul>
+            <a href="#"><button type="submit" class="sign-up">가입하기</button></a>
+            <hr/>
+        </form>
+        <p>이미 회원이신가요?</p>
+        <button type="submit" class="login"><a href="/OOZY/login.html">로그인</a></button>
+    </section>
+</body>
+</html>

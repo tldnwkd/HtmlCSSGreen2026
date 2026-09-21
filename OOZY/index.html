@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우지 카페</title>
+    <link rel="stylesheet" href="/OOZY/index.css">
+</head>
+<body>
+    <!-- Header 부분 html 작성 -->
+    <header id="header">
+        <!-- flex 부모 -->
+        <div class="inner">
+            <!-- 왼쪽 로고  -->
+            <h1 class="logo"><a href="#">OOZY COFFEE</a></h1>
+
+            <!-- 메인 메뉴 -->
+             <nav class="gnd">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="on"><a href="#">MENU</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">FRANCHISE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                </ul>
+             </nav>
+
+             <!-- 우측 영역 -->
+              <div class="header-right">
+                <a href="login.html" class="owner">점주님 공간</a>
+                <a href="#" class="btn-franchise">프렌차이즈</a>
+              </div>
+        </div>
+    </header>
+    <!-- 메뉴 탭 NAV -->
+    <nav class="menu-tab">
+        <ul>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">COFFEE</a></li>
+            <li class="on"><a href="#">COLD BREW</a></li>
+            <li><a href="#">BEVERAGE</a></li>
+            <li><a href="#">FRAPPE</a></li>
+            <li><a href="#">ADE &amp; MOJITO</a></li>
+            <li><a href="#">TEA &amp; JUICE</a></li>
+            <li><a href="#">DESSERT</a></li>
+        </ul>
+    </nav>
+    <!-- 메뉴 리스트 SECTION -->
+     <!-- section 시멘틱 태그의 의미 
+     =>주제별 내용 
+     -->
+    <section class="menu-list">
+        <ul>
+            <li>
+                <img src="/OOZY/images/01_light_vanilla.svg" alt="라이트 바닐라크림콜드브루">
+                <h3>라이트 바닐라 크림 콜드브루</h3>
+                <p>
+                    바닐라크림콜드브루의 부드럽고 달콤한 맛은 그대로, 칼로리 30% 이상다운!<br />(2024년 자사 동일 음료 대비 기준)
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/02_coldbrew.svg" alt="콜드브루 커피">
+                <h3>콜드브루 커피</h3>
+                <p>
+                    차가운 물에 장시간 침출하여 깊은 풍미로 더욱 부드럽게 즐길 수 있는 커피
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/03_coldbrew_latte.svg" alt="콜드브루 라떼">
+                <h3>콜드브루 라떼</h3>
+                <p>
+                    장시간 침출한 콜드브루의 깊은 풍미에 우유의 신선함, 그리고 고소함까지 더해진 라떼
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/04_matcha_latte.svg" alt="말차 콜드브루 라떼">
+                <h3>말차 콜드브루 라떼</h3>
+                <p>
+                    깊고 진한 말차 베이스를 이용하여 쌉싸름하면서 달콤하게 즐길 수 있는 콜드브루 라떼
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/05_vanilla_cream_latte.svg" alt="바닐라크림 콜드브루 라떼">
+                <h3>바닐라크림 콜드브루 라떼</h3>
+                <p>
+                    바닐라크림 베이스를 이용하여 깔끔하면서 달콤한 콜드브루로 새롭게 즐길 수 있는 라떼
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/06_decaf.svg" alt="디카페인 콜드브루 커피">
+                <h3>디카페인 콜드브루 커피</h3>
+                <p>
+                    차가운 물에 장시간 침출하여 깊은 풍미로 깔끔하고 더욱 부드럽게 즐길 수 있는 콜드브루 커피
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/07_yulmu_cream.svg" alt="율무크림콜드브루">
+                <h3>율무크림콜드브루</h3>
+                <p>
+                    단단한 고소한 율무크림과 깔끔한 콜드브루의 조화를 즐길 수 있는 커피
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/08_orange_cream.svg" alt="오렌지크리미슈페너">
+                <h3>오렌지크리미슈페너</h3>
+                <p>
+                    부드럽고 달콤한 바닐라크림과 깔끔한 콜드브루, 상큼한 오렌지의 만남! 첫 입부터 마지막까지 다양한 매력으로 즐길 수 있는 특별한 커피
+                </p>
+            </li>
+            <li>
+                <img src="/OOZY/images/09_condensed_cream.svg" alt="연유크리미슈페너">
+                <h3>연유크리미슈페너</h3>
+                <p>
+                    부드럽고 달콤한 바닐라크림과 깔끔한 콜드브루, 묵직한 연유의 만남! 첫입부터 마지막까지 부드러운 맛으로 즐길 수 있는 크림라떼
+                </p>
+            </li>
+            <li>
+                <span class="season-out"><span class="green">ㅡSEASON</span> OUT</span>
+                <img src="/OOZY/images/10_yuja_crush.svg" alt="유자 크러쉬 콜드브루">
+                <h3>유자 크러쉬 콜드브루</h3>
+                <p>
+                    유자의 상큼달콤한 맛과 향에 쌉쌀한 콜드브루를 더한 여름 커피
+                </p>
+            </li>
+            <li>
+                <span class="season-out"><span class="green">ㅡSEASON</span> OUT</span>
+                <img src="/OOZY/images/11_irish_coffee.svg" alt="아이리쉬커피 (논알콜)">
+                <h3>아이리쉬커피 (논알콜)</h3>
+                <p>
+                    몰트 위스키 향과 오크향을 그대로! 콜드브루의 깔끔함에 바닐라크림의 달콤함, 시나몬 향을 더한 논알콜 위스키 크림커피
+                </p>
+            </li>
+            <li>
+                <span class="season-out"><span class="green">ㅡSEASON</span> OUT</span>
+                <img src="/OOZY/images/12_black_shakerato.svg" alt="블랙샤케라또 (논알콜)">
+                <h3>블랙샤케라또 (논알콜)</h3>
+                <p>
+                    몰트 위스키 향과 오크향을 그대로! 콜드브루의 깔끔함과 풍성하고 쫀쫀한 폼을 더한 논알콜 위스키 샤케라또
+                </p>
+            </li>
+            <li>
+                <span class="season-out"><span class="green">ㅡSEASON</span> OUT</span>
+                <img src="/OOZY/images/13_milk_shakerato.svg" alt="밀크샤케라또 위스키 (논알콜)">
+                <h3>밀크샤케라또 위스키 (논알콜)</h3>
+                <p>
+                    몰트 위스키 향과 오크향을 그대로! 콜드브루의 깔끔함과 부드럽고 쫀쫀한 우유 폼을 더한 논알콜 위스키 샤케라또
+                </p>
+            </li>
+            <li>
+                <span class="season-out"><span class="green">ㅡSEASON</span> OUT</span>
+                <img src="/OOZY/images/14_strawberry_cafe_au_lait.svg" alt="딸기크림 카페오레">
+                <h3>딸기크림 카페오레</h3>
+                <p>
+                    벚꽃같은 비주얼의 딸기 과육이 듬뿍! 상큼하고 부드러운 딸기크림과 콜드브루와 연유의 부드러운 맛이 조화로운 딸기크림 커피
+                </p>
+            </li>
+        </ul>
+    </section>
+    <!-- footer HTML 작성 부분 -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="company">
+                <h2>OOZY COMPANY</h2>
+                <div class="address">
+                    <p>상호명: (주)우지컴퍼니 대표자: 이강원 </p>
+                    <p>사업장주소: 서울 송파구 법원로11길 25 (문정동, 에이치비지니스파크) 4층 408호 우지커피본사 연락처: 1811 - 9024</p>
+                    <p class="address-bottom">사업자등록번호: 509-81-07187</p>
+                    <p>대표자 이메일: oozycoffee_@oozycoffee.com 호스팅 제공자: (주)아임웹</p>
+                    <p class="copy-right">Copyright &copy; 2026 우지커피(OOZYCOFFEE) All rights reserved.</p>
+                </div>
+            </div>
+            <!-- 이용약관 -->
+            <ul class="policy">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="sns">
+                <li><a href="#"><img src="/OOZY/images/icon_instagram.svg" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="/OOZY/images/icon_instagram.svg" alt="유튜브"></a></li>
+                <li><a href="#"><img src="/OOZY/images/icon_blog.svg" alt="블로그"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

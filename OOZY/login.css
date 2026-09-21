@@ -1,0 +1,173 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fffdf3;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+ul{
+    list-style: none;
+}
+
+.container h1{
+    color: #14563a;
+    letter-spacing: 2px;
+    margin: 40px;
+}
+.container form ul li label input{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    opacity: 0.6;
+    padding: 15px;
+    font-size: 16px;
+    margin: 5px;
+}
+.container form ul li button{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #14563a;
+    background-color: #14563a;
+    padding: 15px;
+    margin: 5px;
+}
+.container form ul li button:hover{
+    background-color: #1e7e56;
+    cursor: pointer;
+}
+.container form ul li button a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul.login-find{
+    display: flex;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    justify-content: space-between;
+    color: gray;
+    font-size: 15px;
+    margin-top: 10px;
+}
+ul.login-find a{
+    color: gray;
+    font-size: inherit;
+}
+.sns-container{
+    width: 90%;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.sns-container ul{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    /* justify-content: space-evenly;   */
+    margin-bottom: 25px;
+}
+.sns-container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 5px;
+    /* margin-bottom: 25px; */
+}
+.sns-container li a img{
+    width: 40px;
+    height: 40px;
+}
+.sns-child{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+.sns-container .naver{
+    background-color: rgb(48, 226, 48);
+}
+.sns-container .kakao{
+    background-color: yellow;
+}
+.sns-container .facebook{
+    background-color: rgb(65, 62, 247);
+}
+.sns-container .google{
+    border: 1px solid lightgray;
+
+}
+.sns-container .apple{
+    background-color: black;
+}
+
+button[type=button]{
+    border: 1px solid black;
+    padding: 10px 0;
+    width: 90%;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+button[type=button]:hover{
+    background-color: rgba(216, 215, 215, 0.856);
+    cursor: pointer;
+}
+button[type=button] a{
+    color: black;
+}
+.coupon{
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+.coupon span{
+    font-weight: 600;
+}
+
+.sns-container .sns .naver:hover{
+    background-color: rgb(8, 168, 8);
+}
+.sns-container .sns .kakao:hover{
+    background-color: rgb(223, 223, 24);
+}
+.sns-container .sns .facebook:hover{
+    background-color: rgb(31, 29, 175);
+}
+.sns-container .sns .google:hover{
+    background-color:  rgb(173, 172, 172);
+}
+.sns-container .sns .apple:hover{
+    background-color: rgb(63, 63, 63);
+}

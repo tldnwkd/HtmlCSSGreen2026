@@ -1,0 +1,211 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /* inherit 속성은 바로 위 부모요소의 값을 상속받는다.
+       body가 아니라 a태그를 감싸고있는(p,li,div등)
+    */
+    color: inherit;
+}
+body{
+    /* width: 1200px; */
+    background-color: #fffdf3;
+    color: #222;
+    font-family: sans-serif;
+    min-width: 1200px;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+/* header css 영역 -----------------------------*/
+#header{
+    height: 58px;
+    background-color: #fff;
+    border-bottom: 1px solid #222;   
+}
+/* 부모인 #header의 높이만큼 .inner 자식의 높이를 100%(58px)로 지정 */
+#header .inner{
+    height: 100%;
+    display: flex;
+    /* 가로로 어떻게 배치할 것인지 */
+    justify-content: space-between;
+    /* 세로로 배치를 위/중간/아래중 중간(세로로 배치) */
+    align-items: center;
+}
+#header .inner .gnd ul{
+  display: flex;
+}
+#header .inner .logo{
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #14563a;
+}
+#header .inner .gnd ul li a{
+    /* display: flex의 부모 바로 아래 자식만
+       인라인 요소든, 블록 요소든 너비/높이를 가질 수 있다.
+       따라서 자손 태그는 요소에 따라 너비/높이를 가질 수 없다*/
+    padding: 0 21px;
+    font-size: 12px;
+    color: #555;
+}
+
+#header .inner .gnd ul li.on a{
+    font-weight: bold;
+    color: #000;
+}
+/* header 오른쪽 영역 CSS -------------*/
+#header .inner .header-right{
+    display: flex;
+    align-items: center;
+}
+#header .inner .header-right .owner{
+    margin-right: 22px;
+    font-size: 12px;
+    color: #666;
+}
+#header .inner .header-right .btn-franchise{
+    border-radius: 20px;
+    padding: 9px 16px;
+    background-color: #14563a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* 메뉴 탭 CSS 영역 ----------------- */
+.menu-tab{
+    width: 960px;
+    margin: 24px auto;
+    background-color: #f1eee5;
+    /* border: 1px solid red; */
+}
+.menu-tab ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.menu-tab ul li{
+    flex: 1;
+}
+.menu-tab ul li a{
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+.menu-tab ul li.on a{
+    background-color: #14563a;
+    color: #ffff;
+}
+/* footer 영역 CSS */
+#footer{
+    padding: 34px 0 44px;
+    background-color: #22352a;
+    color: #ffff;
+}
+#footer .inner{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+}
+#footer .inner .company{
+    width: 500px;
+    margin-right: 10px; 
+}
+#footer .inner .company h2{
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #ddd;
+}
+#footer .inner .company p{
+    font-size: 10px;
+    line-height: 1.9; /* 위 font-size 인 10px*1.9 = 19px로 지정됨*/
+}
+#footer .inner .company .copy-right{
+    padding-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #4a5a50;
+    color: #ccc;
+}
+#footer .inner .policy{
+    width: 220px;
+}
+#footer .inner .policy li{
+    margin-bottom: 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+#footer .inner .sns{
+    display: flex;
+}
+#footer .inner .sns li{
+    margin-right: 14px;
+}
+#footer .inner .sns img{
+    width: 18px;
+    height: 18px;
+}
+.address-bottom{
+    margin-bottom: 10px;
+}
+/* section 영역 CSS ---------- */
+.menu-list{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0 40px;
+    /* border: 1px solid red; */
+}
+.menu-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-list ul li{
+    /* season out 배지의 기준이 되는 부모 */
+    position: relative;
+    width: 240px;
+    padding: 0 18px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.menu-list ul li span.season-out{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    border: 2px solid rgb(127, 143, 127);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+    line-height: 1.1;
+    padding-top: 5px;
+    background-color: #fffdf3;
+}
+.menu-list ul li span.season-out span.green{
+    color: #14563a;
+}
+.menu-list ul li img{
+    height: 210px;
+    margin: 0 auto 14px;
+}
+.menu-list ul li h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.menu-list ul li p{
+    font-size: 11px;
+    color: #888;
+    line-height: 1.6;
+}
